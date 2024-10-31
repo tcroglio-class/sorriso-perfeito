@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+	--azul-claro: #A9D6E5;
+	--branco: #FFFFFF;
+	--cinza-claro: #F3F4F6;
+	--verde-suave: #90BE6D;
+	--preto: #000000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* styles gerais */
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.collumn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-family: "Lato", sans-serif;
+	text-align: center;
+	color: var(--branco);
+	font-size: 25px;
+}
+
+.title2 {
+	font-family: "Lato", sans-serif;
+	text-align: center;
+	color: var(--preto);
+	font-size: 20px;
+}
+
+.overlay {
+	position: relative;
+	height: 100%;
+}
+
+.overlay::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
+.overlay>* {
+	position: relative;
+	z-index: 2;
+}
+
+.botao-geral {
+	padding: 7px 20px;
+	border-radius: 50px;
+	background-color: var(--branco);
+	border: 1px solid var(--verde-suave);
+	color: var(--verde-suave);
+}
+
+.botao-geral:hover {
+	background-color: var(--preto);
+	color: var(--verde-suave);
+	transition: 1s linear;
+}
+
+.simple-text {
+	font-family: "Lato", sans-serif;
+}
+
+
+/* fim styles geral */
+
+/* header styles */
+header {
+	background-color: #90be6d;
+	padding: 12px;
+}
+
+.header-content {
+	width: 100%;
+	gap: 10px
+}
+
+/* fim header styles */
+
+/* SECTION HOME */
+
+.home-content {
+	background-image: url(/assets/images/home.png);
+	background-size: cover;
+	padding-bottom: 30px;
+	padding-top: 100px;
+	gap: 10px;
+}
+
+.home-title {
+	color: var(--branco);
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+/* FIM DA SECTION HOME */
+
+/* SECTION SERVICOS */
+.servicos-content {
+	padding-top: 40px;
+
+}
+
+.card-content {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	padding-top: 10px;
+}
+
+.card {
+    border: 1px solid var(--cinza-claro);
+    padding: 10px;
+    text-align: center;
+	border-radius: 10px;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card-image {
+	height: 80px;
+}
+
+/* FIM DA SECTION SERVICOS */
