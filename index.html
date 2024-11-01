@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/styles/styles.css">
+	<script src="scripts/script.js"></script>
 	<title>Sorriso Perfeito</title>
 </head>
 
@@ -159,19 +160,18 @@
 				<h3 class="title2">ENTRE EM CONTATO</h3>
 				<form class="collumn" action="">
 					<label class="simple-text" style="color: var(--preto);" for="nome">Nome</label>
-					<input id="nome" type="text">
+					<input id="nome" required type="text">
 
 					<label class="simple-text" style="color: var(--preto);" for="email">Email</label>
-					<input id="email" type="text">
+					<input id="email" required type="text">
 
-					<label class="simple-text" style="color: var(--preto);" for="telefone">Telefone</label>
-					<input id="telefone" type="text">
+					<label class="simple-text" style="color: var(--preto);" for="mensagem">Mensagem</label>
+					<input id="mensagem" required type="text">
 
-					<input type="submit" class="botao-geral" value="ENVIAR EMAIL">
+					<input type="submit" id="submit-form" class="botao-geral" value="ENVIAR EMAIL">
 				</form>
 			</div>
 		</section>
-
 	</div>
 
 	<footer>
@@ -190,6 +190,7 @@
 					<li class="simple-text"><a href="#contato">-> Contato</a></li>
 				</ul>
 			</div>
+			<p class="simple-text" style="margin-top: 20px; color: white;">&copy; 2024 Tiago Roglio. Todos os direitos reservados.</p>
 		</div>
 	</footer>
 </body>

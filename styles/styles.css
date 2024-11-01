@@ -257,6 +257,27 @@ input:checked+.nav-btn {
 	transform: translateX(-184vh);
 }
 
+@media (min-width: 768px) {
+
+	#slide1:checked~.slides {
+		transform: translateX(0);
+	}
+
+	#slide2:checked~.slides {
+		transform: translateX(-195vh);
+	}
+
+	#slide3:checked~.slides {
+		transform: translateX(-395vh);
+	}
+
+	#slide4:checked~.slides {
+		transform: translateX(-590vh);
+	}
+
+}
+
+
 
 /* FIM DA SECTION GALERIA DE SORRISOS */
 
@@ -372,7 +393,6 @@ form input[type="submit"] {
 	form label {
 		width: 80%;
 	}
-
 
 }
 
